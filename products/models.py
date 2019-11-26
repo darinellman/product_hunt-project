@@ -10,7 +10,7 @@ class Product(models.Model):
     votes_total = models.IntegerField(default=1)
     image = models.ImageField(upload_to='images/')
     icon = models.ImageField(upload_to='images/')
-    body = models.CharField(max_length=1000)
+    body = models.CharField(max_length=2000)
     hunter = models.ForeignKey(User, on_delete=models.CASCADE)
 
 
